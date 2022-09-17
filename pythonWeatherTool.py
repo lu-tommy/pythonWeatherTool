@@ -1,5 +1,6 @@
 import requests
 from keys import *
+apikey = apikey
 city = str(input('enter city: '))
 response = requests.get(
     f"https://api.openweathermap.org/data/2.5/weather?q={city}&units=imperial&appid={apikey}")
